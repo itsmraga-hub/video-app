@@ -1,0 +1,19 @@
+<div id="<%= dom_id video %>">
+  <p>
+    <strong>Name:</strong>
+    <%= video.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= video.description %>
+  </p>
+
+  <p>
+    <strong>Alternate:</strong>
+    <%= video.alternate %>
+  </p>
+
+  <%= video_tag video.file if video.file? %>
+
+</div>
